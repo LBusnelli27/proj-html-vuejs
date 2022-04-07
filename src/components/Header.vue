@@ -1,7 +1,10 @@
 <template>
   <div>
-    <section></section>
-
+    <section class="d-flex gap-4 align-items-center justify-content-center">
+        <p class="m-0">Starts <span class="text-uppercase">tomorrow</span>! Our biggest event of thev year...</p>
+        <p class="my-colck-header m-0">00 : 00 : 00</p>
+        <button class="btn">Get ticket</button>
+    </section>
 
     <section>
       <nav class="d-flex justify-content-around p-4">
@@ -62,6 +65,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  section{
+    button {
+      padding: .2rem 2.5rem;
+      font-weight: 600;
+      background-color: #ef6f31;
+      color: white;
+    }
+    .my-colck-header {
+      color:#22437d;
+      font-weight: 500;
+    }
+  }
+
   nav {
     div{
       img {

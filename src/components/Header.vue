@@ -68,6 +68,14 @@ export default {
         width: 150px;
       }
     }
+    div {
+      ul {
+        li {
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+      }
+    }
     .my-social-container {
       gap: 1rem;
       img {

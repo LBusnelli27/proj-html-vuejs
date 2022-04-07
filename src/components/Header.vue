@@ -2,7 +2,11 @@
   <div>
     <section class="d-flex gap-4 align-items-center justify-content-center">
         <p class="m-0">Starts <span class="text-uppercase">tomorrow</span>! Our biggest event of thev year...</p>
-        <p class="my-colck-header m-0">00 : 00 : 00</p>
+        <div class="my-clock-header d-flex gap-2 align-items-center">
+          <img :src="require('../assets/images/clock-icon.png')" alt="">
+          <p class="m-0">00 : 00 : 00</p>
+        </div>
+        
         <button class="btn">Get ticket</button>
     </section>
 
@@ -66,15 +70,26 @@ export default {
 
 <style lang="scss" scoped>
   section{
+    p {
+      font-weight: 200;
+      opacity: .7;
+    }
     button {
       padding: .2rem 2.5rem;
       font-weight: 600;
       background-color: #ef6f31;
       color: white;
     }
-    .my-colck-header {
+    .my-clock-header {
       color:#22437d;
-      font-weight: 500;
+      img{
+        height: 20px;
+        width: 20px;
+      }
+      p{
+        opacity: 1;
+        font-weight: 500;
+      }
     }
   }
 
@@ -88,7 +103,7 @@ export default {
       ul {
         li {
           font-size: 1.2rem;
-          font-weight: 200;
+          font-weight: 300;
         }
       }
     }

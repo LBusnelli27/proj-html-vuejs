@@ -9,11 +9,14 @@
         <img class="my-hero-image-2 position-absolute" :src="require('../assets/images/artist-hero-image-02.jpg')" alt="">
       </div>
       <div class="my-center-a-div text-center">
+        <h1 class="my-hello-martin">Hello, I'm Martin</h1>
         <h1>Artist Coaching And Mentoring</h1>
         <h1 class="mb-5">Might Be for You</h1>
         <button class="my-btn-orange btn">Get started today</button>
       </div>
-      <div></div>
+      <div>
+
+      </div>
     </section>
   </div>
 </template>
@@ -24,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import "../assets/scss/style.scss";
   .my-hero {
     height: 60vh;
@@ -38,7 +41,7 @@ export default {
     width: 23rem;
   }
   .my-orange-person-hero {
-    top: 25rem;
+    top: 26rem;
     left: 32rem;
     width: 13rem;
   }
@@ -53,5 +56,11 @@ export default {
     left: 20rem;
     top: 5rem;
     width: 20rem;
+  }
+  .my-center-a-div {
+    .my-hello-martin{
+      font-family: 'Nothing You Could Do', cursive;
+      color: #029fcc;
+    }
   }
 </style>

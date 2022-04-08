@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="my-top-nav d-flex gap-4 align-items-center justify-content-center p-2">
-        <p class="m-0">Starts <span class="text-uppercase">tomorrow</span>! Our biggest event of thev year...</p>
+        <p class="my-fw-light m-0">Starts <span class="text-uppercase">tomorrow</span>! Our biggest event of thev year...</p>
         <div class="my-clock-header d-flex gap-2 align-items-center">
           <img :src="require('../assets/images/clock-icon.png')" alt="">
           <p class="m-0">00 : 00 : 00</p>
@@ -74,7 +74,6 @@ export default {
   .my-top-nav{
     background-color: #f5f5f5;
     p {
-      font-weight: 200;
       opacity: .7;
     }
     .my-clock-header {

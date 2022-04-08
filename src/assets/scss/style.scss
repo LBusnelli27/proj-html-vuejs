@@ -4,9 +4,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.my-fw-light {
+    font-weight: 200;
+}
 .my-btn-orange {
     padding: .5rem 2.5rem;
     font-weight: 600;
     background-color: #ef6f31;
     color: white;
+}
+.my-blue-write {
+    font-family: 'Nothing You Could Do', cursive;
+    color: #029fcc;
 }

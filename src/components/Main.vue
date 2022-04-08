@@ -14,8 +14,12 @@
         <h1 class="mb-5">Might Be for You</h1>
         <button class="my-btn-orange btn">Get started today</button>
       </div>
-      <div>
-
+      <div class="position-relative">
+        <img class="my-beige-shape-2 position-absolute" :src="require('../assets/images/artist-shape-01.png')" alt="">
+        <img class="my-feader-shape-1 position-absolute" :src="require('../assets/images/artist-shape-04.png')" alt="">
+        <img class="my-color-shape-1 position-absolute" :src="require('../assets/images/artist-shape-05.png')" alt="">
+        <img class="my-circle-points-1 position-absolute" :src="require('../assets/images/maxcoach-shape-12.png')" alt="">
+        <img class="my-hero-image-4 position-absolute" :src="require('../assets/images/artist-hero-image-04.jpg')" alt="">
       </div>
     </section>
   </div>
@@ -29,11 +33,12 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/style.scss";
+
   .my-hero {
     height: 60vh;
   }
   .my-beige-shape-1 {
-    width: 75rem;
+    width: 57rem;
   }
   .my-blu-points-hero {
     top: 10rem;
@@ -61,6 +66,32 @@ export default {
     .my-hello-martin{
       font-family: 'Nothing You Could Do', cursive;
       color: #029fcc;
+    }
+  }
+
+  div {
+    .my-beige-shape-2 {
+      top: 0;
+      right: 9rem;
+      width: 50rem;
+    }
+    .my-feader-shape-1 {
+      top: 5rem;
+      right: 9rem;
+    }
+    .my-color-shape-1 {
+      top: 35rem;
+      right: 6rem;
+      width: 25rem;
+    }
+    .my-circle-points-1 {
+      top: 39rem;
+      right: 27rem;
+    }
+    .my-hero-image-4 {
+      top: 20rem;
+      right: 20rem;
+      width: 23rem;
     }
   }
 </style>

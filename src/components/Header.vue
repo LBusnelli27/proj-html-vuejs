@@ -7,7 +7,7 @@
           <p class="m-0">00 : 00 : 00</p>
         </div>
         
-        <button class="btn">Get ticket</button>
+        <button class="my-btn-orange btn">Get ticket</button>
     </section>
 
     <section>
@@ -69,17 +69,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/style.scss";
+
   .my-top-nav{
     background-color: #f5f5f5;
     p {
       font-weight: 200;
       opacity: .7;
-    }
-    button {
-      padding: .2rem 2.5rem;
-      font-weight: 600;
-      background-color: #ef6f31;
-      color: white;
     }
     .my-clock-header {
       color:#22437d;

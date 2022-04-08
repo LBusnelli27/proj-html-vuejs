@@ -1,17 +1,40 @@
+.my-padding-website {
+    padding: 6rem 20%;
+}
 .my-center-a-div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.my-big-text {
+    font-size: 4rem;
+    line-height: 6rem;
+}
 .my-fw-light {
     font-weight: 200;
+    font-size: 1.1rem;
+    word-spacing: .2rem;
 }
 .my-btn-orange {
-    padding: .5rem 2.5rem;
+    padding: .7rem 2.5rem;
     font-weight: 600;
     background-color: #ef6f31;
     color: white;
+    &:hover{
+        background-color: #029fcc;
+        color: white;
+    }
+}
+.my-btn-light-orange{
+    padding: .7rem 2.5rem;
+    font-weight: 600;
+    background-color: #fdf0ea;
+    color: #ef6f31;
+    &:hover{
+        background-color: #ef6f31;
+        color: white;
+    }
 }
 .my-blue-write {
     font-family: 'Nothing You Could Do', cursive;

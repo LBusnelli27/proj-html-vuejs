@@ -23,7 +23,8 @@
       </div>
     </section>
 
-    <section class="p-5">
+
+    <section class="my-padding-website">
       <div class="row">
         <div class="col-12 text-center mb-5">
           <h2 class="my-blue-write">Artist coaching</h2>
@@ -32,25 +33,40 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-2 offset-2">
+        <div class="col-3">
           <img class="mb-3" :src="require('../assets/images/artist-box-image-01.png')" alt="Online Courses image">
           <h4 class="fw-light">Online Courses</h4>
           <p class="my-fw-light">Online art coaching now offers you a very powerful way to redesign your artist mind</p>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <img class="mb-3" :src="require('../assets/images/artist-box-image-02.png')" alt="One to One image">
           <h4 class="fw-light">One to One</h4>
           <p class="my-fw-light">Getting the necessary clarity about the current state to help you improve your ability</p>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <img class="mb-3" :src="require('../assets/images/artist-box-image-03.png')" alt="Anywhere image">
           <h4 class="fw-light">Anywhere</h4>
           <p class="my-fw-light">Access to valuable and portable program which alow you to setup and live anywhere you want</p>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <img class="mb-3" :src="require('../assets/images/artist-box-image-04.png')" alt="On Time image">
           <h4 class="fw-light">On Time</h4>
           <p class="my-fw-light">Online art coaching now offers you a very powerful way to redesign your artist mind</p>
+        </div>
+
+        <div class="col-6 text-center p-5">
+          <img src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2020/05/artist-quote-icon.png" alt="">
+          <h1 class="my-big-text">I coach and mentor visual artists, like you, to Create Like You Mean It</h1>
+          <h2 class="my-blue-write">Martin Garrix</h2>
+        </div>
+        <div class="col-6 p-5">
+          <p class="my-fw-light mt-5">
+            As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaningful and authentic artist you truly want to be.I support artists in crafting and living a creative life as well as feeling good about themselves and their art.
+          </p>
+          <p class="my-fw-light my-4">
+            As an artist and an educator for nearly 30 years, I understand what it takes to create.
+          </p>
+          <button class="my-btn-light-orange btn">Get started today</button>
         </div>
       </div>
     </section>

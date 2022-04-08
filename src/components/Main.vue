@@ -68,6 +68,11 @@
           </p>
           <button class="my-btn-light-orange btn">Get started today</button>
         </div>
+
+        <div class="col-12 py-5 text-center position-relative">
+          <img class="my-video-poster" :src="require('../assets/images/artist-video-poster.jpg')" alt="Video poster image">
+          <img class="my-center-a-div" :src="require('../assets/images/icon-youtube-play.png')" alt="Youtube icon">
+        </div>
       </div>
     </section>
   </div>
@@ -135,6 +140,12 @@ export default {
       top: 20rem;
       right: 20rem;
       width: 23rem;
+    }
+  }
+  .my-video-poster{
+    width: 80%;
+    &:hover {
+      cursor: pointer;
     }
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="my-hero d-flex justify-content-between position-relative">
+    <section class="my-hero my-bg-beige d-flex justify-content-between position-relative">
       <div class="position-relative">
         <img class="my-beige-shape-1 position-absolute" :src="require('../assets/images/artist-shape-02.png')" alt="">
         <img class="my-blu-points-hero position-absolute" :src="require('../assets/images/artist-shape-03.png')" alt="">
@@ -75,6 +75,56 @@
         </div>
       </div>
     </section>
+
+
+    <section class="my-bg-beige py-5">
+      <div class="row justify-content-around">
+        <div class="col-12 text-center">
+          <h2 class="my-blue-write">Testimonials</h2>
+          <h1 class="mb-5">Why do people love me?</h1>
+        </div>
+
+        <div class="my-testimonial-card col-3">
+          <h4>It's a choice of quality for people with special needs</h4>
+          <p class="my-fw-light">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <img :src="require('../assets/images/artist-testimonial-avatar-02.jpg')" alt="Florence Themes profile img">
+            </div>
+            <div>
+              <h5 class="my-name-avatar">Florence Themes</h5>
+              <p class="fw-light opacity-50">/ Multimedia Admin</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-testimonial-card col-3">
+          <h4>High level of efficiency and scientific teaching methods</h4>
+          <p class="my-fw-light">I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <img :src="require('../assets/images/artist-testimonial-avatar-04.jpg')" alt="Florence Themes profile img">
+            </div>
+            <div>
+              <h5 class="my-name-avatar">Mina Hollace</h5>
+              <p class="fw-light opacity-50">/ Freelancer</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-testimonial-card col-3">
+          <h4>Professional team of specialists and passionate mentors at reach </h4>
+          <p class="my-fw-light">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <img :src="require('../assets/images/artist-testimonial-avatar-01.jpg')" alt="Florence Themes profile img">
+            </div>
+            <div>
+              <h5 class="my-name-avatar">Madley Pondor</h5>
+              <p class="fw-light opacity-50">/ IT Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -89,7 +139,6 @@ export default {
 
   .my-hero {
     height: 70vh;
-    background-color: #fbf9f6;
   }
   .my-beige-shape-1 {
     width: 57rem;
@@ -146,6 +195,27 @@ export default {
     width: 80%;
     &:hover {
       cursor: pointer;
+    }
+  }
+  .my-testimonial-card {
+    background-color: white;
+    padding: 3rem;
+    h4 {
+      margin-bottom: 1.8rem;
+    }
+    p {
+      margin-bottom: 2.5rem;
+    }
+    div {
+      div {
+        img {
+          border-radius: 50%;
+          width: 5rem;
+        }
+        .my-name-avatar {
+            margin-top: 2rem;
+        }
+      }
     }
   }
 </style>

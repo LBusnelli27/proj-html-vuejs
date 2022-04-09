@@ -125,12 +125,98 @@
         </div>
       </div>
     </section>
+
+
+    <section class="my-padding-website">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="my-blue-write">Artist coaching</h2>
+          <h1 class="mb-5">Latest online Courses</h1>
+        </div>
+        <div class="my-course-card col-3 mb-5" v-for="(index, element) in onlineCourses" :key="element">
+          <img :src="require('../assets/images/' + index.imgName)" alt="">
+          <div class="my-couse-desc p-3">
+            <p class="fw-bold">{{ index.price }}</p>
+            <h5 class="mb-4">{{ index.name }}</h5>
+            <div>
+              <span class="fw-lighter me-3">{{ index.numberLesson }} Lessons</span><span class="fw-lighter">{{ index.maxStudents }} Students</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+          <button class="my-btn-light-orange btn w-25">View all courses</button>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name : 'MainComponent'
+  name : 'MainComponent',
+
+  data() {
+    return {
+      onlineCourses : [
+        {
+          imgName : 'artist-course-08-480x480.jpg',
+          price : '$18.00',
+          name : 'The Acrylic Painting Academy',
+          numberLesson : 4,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-07-480x480.jpg',
+          price : '$21.00',
+          name : 'Drawing and Shading: Complete Course',
+          numberLesson : 14,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-06-480x480.jpg',
+          price : '$19.00',
+          name : 'The Color Theory for Digital Artist',
+          numberLesson : 7,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-05-480x480.jpg',
+          price : '$35.00',
+          name : 'Ultimate Guide to Digital Sketching for Beginners',
+          numberLesson : 14,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-04-480x480.jpg',
+          price : '$19.00',
+          name : 'Portrait Drawing The Smart Way',
+          numberLesson : 2,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-03-480x480.jpg',
+          price : '$19.00',
+          name : 'Mastering Watercolor Painting from Beginer',
+          numberLesson : 9,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-02-480x480.jpg',
+          price : '$25.00',
+          name : 'The Art & Science of Drawing',
+          numberLesson : 4,
+          maxStudents : 50
+        },
+        {
+          imgName : 'artist-course-01-480x480.jpg',
+          price : '$22.00',
+          name : 'The Colored Pencil Drawing Courses',
+          numberLesson : 6,
+          maxStudents : 50
+        },
+      ]
+    }
+  },
 }
 </script>
 
@@ -214,6 +300,19 @@ export default {
         }
         .my-name-avatar {
             margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  section {
+    .my-course-card {
+      img {
+        width: 100%;
+      }
+      .my-couse-desc {
+        p {
+          color: #ef6f31;
         }
       }
     }

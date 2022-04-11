@@ -225,7 +225,10 @@
 
 
     <!-- UPCOMING EVENTS -->
-    <section class="my-padding-website">
+    <section class="my-padding-website position-relative">
+      <div class="my-shapes-upcoming-events">
+        <h1 class="position-absolute">Events</h1>
+      </div>
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="my-blue-write">Upcoming Events</h2>
@@ -522,5 +525,15 @@ export default {
       transform: rotate(90deg);
     }
   }
-  // Start shape section
+  .my-shapes-upcoming-events {
+    h1 {
+      font-size: 15rem;
+      color: white;
+      text-shadow: 2px 0 0 #ffcfb9, -2px 0 0 #ffcfb9, 0 2px 0 #ffcfb9, 0 -2px 0 #ffcfb9, 1px 1px #ffcfb9, -1px -1px 0 #ffcfb9, 1px -1px 0 #ffcfb9, -1px 1px 0 #ffcfb9;
+      top: 35%;
+      left: -13rem;
+      transform: rotate(90deg);
+    }
+  }
+  // End shape section
 </style>

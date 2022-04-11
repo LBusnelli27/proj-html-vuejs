@@ -199,8 +199,53 @@
     </section>
 
 
-    <section class="my-padding-website my-bg-latest-blog">
-      
+    <section class="my-padding-website">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="my-blue-write">Upcoming Events</h2>
+          <h1 class="mb-5">Let's Work Together</h1>
+        </div>
+        <div class="col-6 d-flex">
+          <div>
+            <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-04-250x300.jpg')" alt="">
+          </div>
+          <div class="my-desc-upcoming-events">
+            <p class="my-fw-light">NOV 22, 2020</p>
+            <h4 class="mb-3">Storytelling Workshop</h4>
+            <span class="fw-lighter">Texas, US</span>
+          </div>
+        </div>
+        <div class="col-6 d-flex">
+          <div>
+            <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-03-250x300.jpg')" alt="">
+          </div>
+          <div class="my-desc-upcoming-events">
+            <p class="my-fw-light">OCT 10, 2020</p>
+            <h4 class="mb-3">Painting Art Contest 2020</h4>
+            <span class="fw-lighter">New York, US</span>
+          </div>
+        </div>
+        <div class="col-6 d-flex">
+          <div class="my-desc-upcoming-events">
+            <p class="my-fw-light">NOV 23, 2020</p>
+            <h4 class="mb-3">International Art Fair 2020</h4>
+            <span class="fw-lighter">Hamburg, Germany</span>
+          </div>
+          <div>
+            <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-02-250x300.jpg')" alt="">
+          </div>
+        </div>
+        <div class="col-6 d-flex">
+          <div class="my-desc-upcoming-events">
+            <p class="my-fw-light">DEC 15, 2020</p>
+            <h4 class="mb-3">Street Performance: Call for Artist</h4>
+            <span class="fw-lighter">Illinois, US</span>
+          </div>
+          <div>
+            <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-01-250x300.jpg')" alt="">
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -380,6 +425,16 @@ export default {
     color: white;
   }
   .my-padding-article-card {
-    padding: 6.5rem;
+    padding: 6rem;
+  }
+
+  div {
+    .my-img-upcoming-events{
+      width: 17rem;
+      height: 20rem;
+    }
+    .my-desc-upcoming-events {
+      padding: 6rem 2rem;
+    }
   }
 </style>

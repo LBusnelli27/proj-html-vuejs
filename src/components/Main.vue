@@ -97,7 +97,7 @@
           <h1 class="mb-5">Why do people love me?</h1>
         </div>
 
-        <div class="my-testimonial-card col-3">
+        <div class="my-testimonial-card col-3 opacity-50">
           <h4>It's a choice of quality for people with special needs</h4>
           <p class="my-fw-light">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
           <div class="d-flex align-items-center">
@@ -123,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="my-testimonial-card col-3">
+        <div class="my-testimonial-card col-3 opacity-50">
           <h4>Professional team of specialists and passionate mentors at reach </h4>
           <p class="my-fw-light">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
           <div class="d-flex align-items-center">

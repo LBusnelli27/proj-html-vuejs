@@ -80,6 +80,7 @@
           <div class="my-shapes-video-poster">
             <img class="position-absolute maxcoach-shape-12" :src="require('../assets/images/maxcoach-shape-12.png')" alt="">
             <img class="position-absolute maxcoach-shape-5" :src="require('../assets/images/maxcoach-shape-05.png')" alt="">
+            <span class="position-absolute">o</span>
           </div>
           <img class="my-video-poster" :src="require('../assets/images/artist-video-poster.jpg')" alt="Video poster image">
           <img class="my-center-a-div" :src="require('../assets/images/icon-youtube-play.png')" alt="Youtube icon">
@@ -146,7 +147,10 @@
 
 
     <!-- LATEST COURSES -->
-    <section class="my-padding-website">
+    <section class="my-padding-website position-relative">
+      <div class="my-shapes-video-poster">
+        
+      </div>
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="my-blue-write">Artist coaching</h2>
@@ -488,6 +492,12 @@ export default {
       z-index: -1;
       bottom: 1.5rem;
       right: 0;
+    }
+    span {
+      font-size: 8rem;
+      top: 9rem;
+      right: 5.5rem;
+      color: #ffcfb9;
     }
   }
 

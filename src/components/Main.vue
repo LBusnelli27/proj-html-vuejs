@@ -134,8 +134,8 @@
           <h1 class="mb-5">Latest online Courses</h1>
         </div>
         <div class="my-course-card col-3 mb-5" v-for="(index, element) in onlineCourses" :key="element">
-          <img :src="require('../assets/images/' + index.imgName)" alt="">
-          <div class="my-couse-desc p-3">
+          <img :src="require('../assets/images/' + index.imgName)" :alt="index.name + ''">
+          <div class="my-course-desc p-3">
             <p class="fw-bold">{{ index.price }}</p>
             <h5 class="mb-4">{{ index.name }}</h5>
             <div>
@@ -146,6 +146,55 @@
       </div>
       <div class="row justify-content-center">
           <button class="my-btn-light-orange btn w-25">View all courses</button>
+      </div>
+    </section>
+
+
+    <section class="my-padding-website my-bg-latest-blog">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="my-blue-write">Articles and Tips</h2>
+          <h1 class="mb-5">Latest online Courses</h1>
+        </div>
+        <div class="col-4 my-padding-article-card">
+          <div class="my-course-card mt-5 bg-white">
+            <img :src="require('../assets/images/artist-blog-03-480x356.jpeg')" alt="">
+            <div class="my-course-desc p-3">
+              <p class="fw-lighter text-uppercase">Artist</p>
+              <h5 class="mb-4">Brush Strokes Energize Trees in Paintings</h5>
+              <div>
+                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">688 views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="my-course-card mb-5 bg-white position-relative">
+            <img :src="require('../assets/images/artist-blog-02-500x680.jpg')" alt="">
+            <div id="my-desc-self-portrait" class="my-course-desc p-3 position-absolute">
+              <p class="text-uppercase fw-bold text-white">Artist</p>
+              <h3 class="mb-4 fw-bold">Brush Strokes Energize Trees in Paintings</h3>
+              <div>
+                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">688 views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 my-padding-article-card">
+          <div class="my-course-card bg-white">
+            <img :src="require('../assets/images/artist-blog-01-480x356.jpg')" alt="">
+            <div class="my-course-desc p-3">
+              <p class="fw-lighter text-uppercase">Artist</p>
+              <h5 class="mb-4">Brush Strokes Energize Trees in Paintings</h5>
+              <div>
+                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">688 views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-5 text-center">
+          <h4>Get into details now? View all posts</h4>
+        </div>
       </div>
     </section>
   </div>
@@ -310,11 +359,22 @@ export default {
       img {
         width: 100%;
       }
-      .my-couse-desc {
+      .my-course-desc {
         p {
           color: #ef6f31;
         }
       }
     }
+  }
+
+  .my-bg-latest-blog {
+    background-color: #f5f7fa;
+  }
+  #my-desc-self-portrait {
+    bottom: 0;
+    color: white;
+  }
+  .my-padding-article-card {
+    padding: 6.5rem;
   }
 </style>

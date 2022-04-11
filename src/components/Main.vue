@@ -77,6 +77,10 @@
         </div>
 
         <div class="col-12 py-5 text-center position-relative">
+          <div class="my-shapes-video-poster">
+            <img class="position-absolute maxcoach-shape-12" :src="require('../assets/images/maxcoach-shape-12.png')" alt="">
+            <img class="position-absolute maxcoach-shape-5" :src="require('../assets/images/maxcoach-shape-05.png')" alt="">
+          </div>
           <img class="my-video-poster" :src="require('../assets/images/artist-video-poster.jpg')" alt="Video poster image">
           <img class="my-center-a-div" :src="require('../assets/images/icon-youtube-play.png')" alt="Youtube icon">
         </div>
@@ -470,6 +474,19 @@ export default {
     }
     .maxcoach-shape-13 {
       top: 20rem;
+      right: 0;
+    }
+  }
+
+  .my-shapes-video-poster{
+    .maxcoach-shape-5 {
+      z-index: -1;
+      top: 1.5rem;
+      left: 5.5rem;
+    }
+    .maxcoach-shape-12 {
+      z-index: -1;
+      bottom: 1.5rem;
       right: 0;
     }
   }

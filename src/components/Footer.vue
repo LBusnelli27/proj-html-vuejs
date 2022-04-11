@@ -131,7 +131,7 @@ export default {
   }
   .my-intagram-pics-container {
     img {
-      width: calc((100% /3) - 20px);
+      width: calc(100% /3);
       height: 10rem;
     }
   }

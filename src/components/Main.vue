@@ -26,7 +26,12 @@
 
 
     <!-- ARTIST COACHING -->
-    <section class="my-padding-website">
+    <section class="my-padding-website position-relative">
+      <div class="my-shapes-artist-coaching">
+        <img class="position-absolute artist-shape-01" :src="require('../assets/images/artist-shape-01.png')" alt="">
+        <img class="position-absolute line-shape" :src="require('../assets/images/maxcoach-shape-03.png')" alt="">
+        <img class="position-absolute maxcoach-shape-13" :src="require('../assets/images/maxcoach-shape-13.png')" alt="">
+      </div>
       <div class="row">
         <div class="col-12 text-center mb-5">
           <h2 class="my-blue-write">Artist coaching</h2>
@@ -449,4 +454,25 @@ export default {
       padding: 6rem 2rem;
     }
   }
+
+  // Start shape section
+
+  .my-shapes-artist-coaching{
+    .artist-shape-01{
+      transform: rotate(230deg);
+      left: -10rem;
+    }
+    .line-shape{
+      opacity: .2;
+      left: 0;
+      top: 1rem;
+      width: 100%;
+    }
+    .maxcoach-shape-13 {
+      top: 20rem;
+      right: 0;
+    }
+  }
+
+  // Start shape section
 </style>

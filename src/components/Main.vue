@@ -435,6 +435,12 @@ export default {
       img {
         width: 100%;
       }
+      &:hover > .my-course-desc{
+        border: 2px solid #ef6f31;
+        background-color: white;
+        transform: translateY(-5rem);
+        transition: background-color .2s ease-in-out, border-color .5s ease-in-out, transform .5s ease-in-out;
+      }
       .my-course-desc {
         p {
           color: #ef6f31;

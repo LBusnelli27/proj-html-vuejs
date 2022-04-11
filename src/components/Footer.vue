@@ -1,7 +1,11 @@
 <template>
   <div>
-    <section class="my-padding-footer my-top-part-footer">
+    <section class="my-padding-footer my-top-part-footer position-relative">
       <div class="row">
+        <div class="my-shapes-footer">
+          <img class="position-absolute footer-shape-01" :src="require('../assets/images/artist-shape-color-paint-top-left.png')" alt="">
+          <img class="position-absolute footer-shape-02" :src="require('../assets/images/artist-shape-color-paint-bottom-right.png')" alt="">
+        </div>
         <div class="col-4">
           <h1 class="text-white text-end">Newsletter to get in touch</h1>
         </div>
@@ -119,6 +123,18 @@ export default {
         font-size: 1.5rem;
         font-weight: 200;
       }
+    }
+  }
+  .my-shapes-footer {
+    .footer-shape-01 {
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .footer-shape-02 {
+      height: 100%;
+      top: 0;
+      right: 0;
     }
   }
 

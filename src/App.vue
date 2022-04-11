@@ -29,5 +29,6 @@ export default {
 
 #app {
   min-width: 1100px;
+  overflow-x: hidden;
 }
 </style>

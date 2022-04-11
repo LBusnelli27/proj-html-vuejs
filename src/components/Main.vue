@@ -133,13 +133,13 @@
           <h2 class="my-blue-write">Artist coaching</h2>
           <h1 class="mb-5">Latest online Courses</h1>
         </div>
-        <div class="my-course-card col-3 mb-5" v-for="(index, element) in onlineCourses" :key="element">
-          <img :src="require('../assets/images/' + index.imgName)" :alt="index.name + ''">
+        <div class="my-course-card col-3 mb-5" v-for="(element, index) in onlineCourses" :key="index">
+          <img :src="require('../assets/images/' + element.imgName)" :alt="element.name + ''">
           <div class="my-course-desc p-3">
-            <p class="fw-bold">{{ index.price }}</p>
-            <h5 class="mb-4">{{ index.name }}</h5>
+            <p class="fw-bold">{{ element.price }}</p>
+            <h5 class="mb-4">{{ element.name }}</h5>
             <div>
-              <span class="fw-lighter me-3">{{ index.numberLesson }} Lessons</span><span class="fw-lighter">{{ index.maxStudents }} Students</span>
+              <span class="fw-lighter me-3">{{ element.numberLesson }} Lessons</span><span class="fw-lighter">{{ element.maxStudents }} Students</span>
             </div>
           </div>
         </div>

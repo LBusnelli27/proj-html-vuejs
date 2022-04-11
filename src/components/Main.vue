@@ -175,7 +175,10 @@
 
 
     <!-- ARTICLES AND TIPS -->
-    <section class="my-padding-website my-bg-latest-blog">
+    <section class="my-padding-website my-bg-latest-blog position-relative">
+      <div class="my-shapes-articles">
+        <img class="position-absolute line-shape" :src="require('../assets/images/maxcoach-shape-03.png')" alt="">
+      </div>
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="my-blue-write">Articles and Tips</h2>
@@ -525,6 +528,20 @@ export default {
       transform: rotate(90deg);
     }
   }
+
+  .my-padding-article-card {
+    z-index: 2;
+  }
+  .my-shapes-articles {
+    .line-shape{
+      opacity: .5;
+      z-index: 0;
+      left: 0;
+      top: 15rem;
+      width: 100%;
+    }
+  }
+
   .my-shapes-upcoming-events {
     h1 {
       font-size: 15rem;

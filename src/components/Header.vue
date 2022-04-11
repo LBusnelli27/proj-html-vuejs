@@ -17,7 +17,7 @@
         </div>
         <div>
           <ul class="d-flex gap-5 list-unstyled">
-            <li v-for="(element, index) in navElements" :key="index">{{ element.name }}</li>
+            <li v-for="(element, index) in navElements" :key="index">{{ element.name }} <i class="fa-solid fa-angle-down"></i></li>
           </ul>
         </div>
         <div class="my-social-container d-flex">

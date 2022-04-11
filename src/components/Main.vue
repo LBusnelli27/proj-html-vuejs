@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- HERO -->
     <section class="my-hero my-bg-beige d-flex justify-content-between position-relative">
       <div class="position-relative">
         <img class="my-beige-shape-1 position-absolute" :src="require('../assets/images/artist-shape-02.png')" alt="">
@@ -24,6 +25,7 @@
     </section>
 
 
+    <!-- ARTIST COACHING -->
     <section class="my-padding-website">
       <div class="row">
         <div class="col-12 text-center mb-5">
@@ -77,6 +79,7 @@
     </section>
 
 
+    <!-- TESTIMONIALS -->
     <section class="my-bg-beige py-5">
       <div class="row justify-content-around">
         <div class="col-12 text-center">
@@ -123,10 +126,17 @@
             </div>
           </div>
         </div>
+        <div class="col-12 mt-5 text-center">
+          <i class="fa-solid fa-circle me-3"></i>
+          <i class="fa-solid fa-circle me-3 opacity-25"></i>
+          <i class="fa-solid fa-circle me-3 opacity-25"></i>
+          <i class="fa-solid fa-circle me-3 opacity-25"></i>
+        </div>
       </div>
     </section>
 
 
+    <!-- LATEST COURSES -->
     <section class="my-padding-website">
       <div class="row">
         <div class="col-12 text-center">
@@ -139,17 +149,18 @@
             <p class="fw-bold">{{ element.price }}</p>
             <h5 class="mb-4">{{ element.name }}</h5>
             <div>
-              <span class="fw-lighter me-3">{{ element.numberLesson }} Lessons</span><span class="fw-lighter">{{ element.maxStudents }} Students</span>
+              <span class="fw-lighter me-3"><i class="fa-regular fa-file-lines"></i> {{ element.numberLesson }} Lessons</span><span class="fw-lighter"><i class="fa-regular fa-user"></i> {{ element.maxStudents }} Students</span>
             </div>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
-          <button class="my-btn-light-orange btn w-25">View all courses</button>
+          <button class="my-btn-light-orange btn w-25">View all courses <i class="fa-solid fa-arrow-right-long"></i></button>
       </div>
     </section>
 
 
+    <!-- ARTICLES AND TIPS -->
     <section class="my-padding-website my-bg-latest-blog">
       <div class="row">
         <div class="col-12 text-center">
@@ -163,7 +174,7 @@
               <p class="fw-lighter text-uppercase">Artist</p>
               <h5 class="mb-4">Brush Strokes Energize Trees in Paintings</h5>
               <div>
-                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">688 views</span>
+                <span class="fw-lighter me-3"><i class="fa-regular fa-calendar"></i> May 15, 2020</span><span class="fw-lighter"><i class="fa-solid fa-eye"></i> 688 views</span>
               </div>
             </div>
           </div>
@@ -175,7 +186,7 @@
               <p class="text-uppercase fw-bold text-white">Artist</p>
               <h3 class="mb-4 fw-bold">Connection Between Self-Portraits and Identity</h3>
               <div>
-                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">397 views</span>
+                <span class="fw-lighter me-3"><i class="fa-regular fa-calendar"></i> May 15, 2020</span><span class="fw-lighter"><i class="fa-solid fa-eye"></i> 397 views</span>
               </div>
             </div>
           </div>
@@ -187,7 +198,7 @@
               <p class="fw-lighter text-uppercase">Artist</p>
               <h5 class="mb-4">Pocket-Sized Notebooks Hold Miniature Paintings</h5>
               <div>
-                <span class="fw-lighter me-3">May 15, 2020</span><span class="fw-lighter">603 views</span>
+                <span class="fw-lighter me-3"><i class="fa-regular fa-calendar"></i> May 15, 2020</span><span class="fw-lighter"><i class="fa-solid fa-eye"></i> 603 views</span>
               </div>
             </div>
           </div>
@@ -199,6 +210,7 @@
     </section>
 
 
+    <!-- UPCOMING EVENTS -->
     <section class="my-padding-website">
       <div class="row">
         <div class="col-12 text-center">
@@ -212,7 +224,7 @@
           <div class="my-desc-upcoming-events">
             <p class="my-fw-light">NOV 22, 2020</p>
             <h4 class="mb-3">Storytelling Workshop</h4>
-            <span class="fw-lighter">Texas, US</span>
+            <span class="fw-lighter"><i class="fa-solid fa-location-dot"></i> Texas, US</span>
           </div>
         </div>
         <div class="col-6 d-flex">
@@ -222,14 +234,14 @@
           <div class="my-desc-upcoming-events">
             <p class="my-fw-light">OCT 10, 2020</p>
             <h4 class="mb-3">Painting Art Contest 2020</h4>
-            <span class="fw-lighter">New York, US</span>
+            <span class="fw-lighter"><i class="fa-solid fa-location-dot"></i> New York, US</span>
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="my-desc-upcoming-events">
             <p class="my-fw-light">NOV 23, 2020</p>
             <h4 class="mb-3">International Art Fair 2020</h4>
-            <span class="fw-lighter">Hamburg, Germany</span>
+            <span class="fw-lighter"><i class="fa-solid fa-location-dot"></i> Hamburg, Germany</span>
           </div>
           <div>
             <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-02-250x300.jpg')" alt="">
@@ -239,7 +251,7 @@
           <div class="my-desc-upcoming-events">
             <p class="my-fw-light">DEC 15, 2020</p>
             <h4 class="mb-3">Street Performance: Call for Artist</h4>
-            <span class="fw-lighter">Illinois, US</span>
+            <span class="fw-lighter"><i class="fa-solid fa-location-dot"></i> Illinois, US</span>
           </div>
           <div>
             <img class="my-img-upcoming-events" :src="require('../assets/images/artist-event-01-250x300.jpg')" alt="">

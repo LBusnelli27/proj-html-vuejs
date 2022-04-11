@@ -19,6 +19,12 @@
           <p class="fw-lighter">382 NE 191st St # 87394 Miami, FL 33179-3899</p>
           <p class="fw-lighter">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
           <p class="fw-lighter">support@maxcoach.com</p>
+          <div>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
         <div class="col-2">
           <h5 class="mb-4">Explore</h5>
@@ -121,6 +127,11 @@ export default {
       font-weight: 200;
       margin-bottom: .8rem;
     }
+  }
+  i {
+    font-size: 2rem;
+    margin-right: .5rem;
+    opacity: .6;
   }
   h5 {
     span {
